@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #include <stdlib.h>
 
 
@@ -20,6 +21,7 @@ Chapitre chap2 = {"Lac Saint-Josianne", "Le lac Saint-Josianne est connu pour ab
 Chapitre chap3 = {"Bois Magique","Bien qu'on disent de se bois qu'il es magique, la plupart des legende lui faisent reference s'avere fausse.", 10, 10, 3};
 Chapitre chap4 = {"Chemin des Elfes","", 10, 10, 3};
 Chapitre chap5 = {"Route de la colline","", 10, 10, 3};
+
 
 
 int main() {
@@ -61,13 +63,6 @@ scanf("%d", &deplacement);
 		fin = 1;
 			}
 }
-
-
-
-
-
-
-
 
 
 
