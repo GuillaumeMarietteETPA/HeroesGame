@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 
-
 struct Chapitre {
 	char nmlieu[30];
 	char descrpt[1000]; 
@@ -10,6 +9,8 @@ struct Chapitre {
 	int gainpv;
 	int id;
 };
+
+
 
 typedef struct Chapitre Chapitre;
 
@@ -33,6 +34,7 @@ Chapitre chap12 = {"","", 10, 10, 3};
 
 
 
+
 int main() {
 
 int fin;
@@ -42,9 +44,9 @@ int deplacement;
 
 printf("C'est ici que votre roadtrip a travers le monde de SugarLand commence !\n");
 printf("Choisissez votre destination :\n %s[1]\n %s[2]\n", chap1.nmlieu, chap2.nmlieu);
-	while (deplacement != chap1.id || deplacement != chap2.id) {
-	scanf("%d", &deplacement);	
-	}
+scanf("%d", &deplacement);	
+	
+
 
 
 while (fin != 1) {
@@ -56,6 +58,7 @@ printf("Vous appercevez un bois derriere une des maison au limites de la ville. 
 	while (deplacement != chap2.id || deplacement != chap3.id) {
 	scanf("%d", &deplacement);	
 	}
+
 }
 
 if (deplacement == chap2.id) {
@@ -65,6 +68,7 @@ printf("Vous appercevez un bois derriere la ville qui borde le lac. Un chemin me
 	while (deplacement != chap1.id || deplacement != chap3.id || deplacement != chap5.id) {
 	scanf("%d", &deplacement);	
 	}
+
 }
 
 if (deplacement == chap3.id) {
@@ -74,12 +78,15 @@ printf("Vous passer devant un sentier fort attrayant. De petites creature semble
 	while (deplacement != chap1.id || deplacement != chap2.id || deplacement != chap4.id) {
 	scanf("%d", &deplacement);	
 	}
+
 }
 
 		if (deplacement == 42) {
 		fin = 1;
 			}
 }
+
+
 
 
 
